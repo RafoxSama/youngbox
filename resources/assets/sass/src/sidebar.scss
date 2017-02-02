@@ -1,0 +1,138 @@
+.sidebar {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 211px;
+    z-index: 1030;
+    transition-duration: .3s;
+    transform: translate3d(211px, 0, 0)
+
+}
+.sidebar .sidebar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: calc(100% + 400px);
+    fill: darken(#393E46, 3%);
+    z-index: -1
+}
+.sidebar-username{
+    position: relative;
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0px auto;
+    background: #2e333a;
+    transition-duration: .55s;
+    transform: translate3d(211px, 0, 0)
+}
+.sidebar-avatar {
+    position: relative;
+    width: 102px;
+    height: 102px;
+    margin: 30px auto;
+    border: 6px solid darken(#333841, 3%);
+    border-radius: 90px;
+    transition-duration: .3s;
+    transform: translate3d(200px, 0, 0)
+}
+.sidebar-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 90px;
+    opacity: .8
+}
+.sidebar-avatar span {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 0 #000
+}
+.sidebar-avatar strong {
+    font-size: 22px;
+    font-weight: 700
+}
+.sidebar-menu a {
+    display: block;
+    height: 66px;
+    background-color: lighten(#2e333a, 0.6%);
+    border-top: 2px solid #2c3138; 
+    font-weight: 700;
+    font-size: 14px;
+    color: #939faf;
+    line-height: 66px;
+    transition-duration: .55s;
+    transform: translate3d(200px, 0, 0)
+}
+.sidebar-menu a.menu_last {
+    border-bottom: 2px solid #2c3138; 
+}
+.sidebar-menu a:focus,
+.sidebar-menu a:hover {
+    background-color: darken(#2e333a, 0.9%);
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar-menu a.sidebar_logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.sidebar-menu a.sidebar_logout:focus,
+.sidebar-menu a.sidebar_logout:hover {
+    background-color: #20262d
+
+}
+.sidebar-menu a.sidebar_logout .ap-payment-button:before,
+.sidebar-menu a.sidebar_logout .icon {
+    color: #c0392b
+}
+.sidebar-menu .ap-payment-button:before,
+.sidebar-menu .icon {
+    margin: 0 15px
+}
+.has-sidebar .sidebar,
+.has-sidebar .sidebar-username,
+.has-sidebar .sidebar-avatar,
+.has-sidebar .sidebar-menu a {
+    transform: translateZ(0)
+}
+.has-sidebar .sidebar-menu a:nth-child(1) {
+    transition: transform .3s ease .05s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(2) {
+    transition: transform .3s ease .1s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(3) {
+    transition: transform .3s ease .15s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(4) {
+    transition: transform .3s ease .2s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(5) {
+    transition: transform .3s ease .25s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(6) {
+    transition: transform .3s ease .3s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(7) {
+    transition: transform .3s ease .35s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(8) {
+    transition: transform .3s ease .4s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(9) {
+    transition: transform .3s ease .45s, color .3s ease 0s, background .3s ease 0s
+}
+.has-sidebar .sidebar-menu a:nth-child(10) {
+    transition: transform .3s ease .5s, color .3s ease 0s, background .3s ease 0s
+}

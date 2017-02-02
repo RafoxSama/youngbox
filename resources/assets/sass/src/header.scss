@@ -1,0 +1,338 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 66px;
+    width: 100%;
+    z-index: 1000;
+    color: #6d7a8b;
+    font-size: 14px;
+    background: #393E46;
+    transition-duration: .3s;
+    box-shadow: 0 2px 10px rgba(109, 122, 139, .1);
+    overflow: hidden;
+}
+.topbar.is-scrolled {
+    background-color: rgba(64, 72, 82, .95)
+}
+.has-fullscreen-editor .topbar,
+.topbar.is-hidden {
+    transform: translateY(-140%)
+}
+.pricing-col footer .topbar a,
+.topbar .ap-payment-button,
+.topbar .btn,
+.topbar .pricing-col footer a {
+    margin: 14px 14px 0 0;
+    height: 34px;
+    line-height: 30px;
+    font-weight: 700
+}
+.topbar a {
+    text-decoration: none
+}
+.topbar-offset {
+    visibility: hidden;
+    position: absolute;
+    top: -66px
+}
+.topbar-menu-icon {
+    display: none
+}
+.topbar-logo {
+    float: left;
+    display: block;
+    height: 66px;
+    width: 80px;
+    padding: 14px;
+    margin-right: 15px;
+    background-color: lighten(#426d9b, 9%);
+    text-align: center;
+    transition-duration: .3s
+}
+.topbar-logo:focus,
+.topbar-logo:hover {
+    background-color: lighten(#426d9b, 11%);
+    outline: none
+}
+.topbar-menu {
+    float: left
+}
+.topbar-menu em {
+    font-size: .9em;
+    font-style: normal;
+    color: #a5aeb9;
+    vertical-align: middle
+}
+.topbar-menu em:before {
+    content: '('
+}
+.topbar-menu em:after {
+    content: ')'
+}
+.topbar-menu a {
+    display: block;
+    float: left;
+    height: 66px;
+    padding: 0 15px;
+    line-height: 66px;
+    color: #6d7a8b;
+    font-weight: 700;
+    transition-duration: .3s
+}
+.topbar-menu a.active,
+.topbar-menu a:focus,
+.topbar-menu a:hover {
+    color: #fff
+}
+.topbar-menu a:focus {
+    outline: none
+}
+.topbar-menu-premium {
+    color: #85b55d!important
+}
+.topbar-menu .topbar-menu_home {
+    display: none
+}
+.topbar-right {
+    float: right
+}
+.topbar_icon {
+    position: relative;
+    padding: 0 10px;
+    height: 66px;
+    line-height: 76px
+}
+.topbar_icon:focus .ap-payment-button:before,
+.topbar_icon:focus .icon,
+.topbar_icon:hover .ap-payment-button:before,
+.topbar_icon:hover .icon {
+    color: #fff
+}
+.topbar_icon .ap-payment-button:before,
+.topbar_icon .icon {
+    font-size: 22px;
+    transition-duration: .3s
+}
+.topbar_icon .icon_count {
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    height: 18px;
+    padding: 0 6px;
+    color: #fff;
+    font-size: 12px;
+    font-family: Open Sans;
+    line-height: 18px;
+    text-align: center;
+    background-color: #78ab4e;
+    border-radius: 18px
+}
+.topbar-notifications {
+    display: inline-block
+}
+.topbar-search {
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 16px;
+    margin-right: 20px;
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+    line-height: 34px;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 3px
+}
+.topbar-search.focus,
+.topbar-search:focus,
+.topbar-search:hover {
+    border-color: #a5aeb9;
+    color: #a5aeb9;
+    width: 250px;
+    height: 34px
+}
+.topbar-search.focus input,
+.topbar-search:focus input,
+.topbar-search:hover input {
+    color: #a5aeb9
+}
+.topbar-search.focus .icon-search,
+.topbar-search:focus .icon-search,
+.topbar-search:hover .icon-search {
+    font-size: 18px
+}
+.topbar-search input {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 34px;
+    right: 0;
+    background: transparent;
+    border: none;
+    height: 32px;
+    width: 100%;
+    padding: 0 5px;
+    color: #6d7a8b;
+    font-weight:bold;
+
+}
+.topbar-search input::-webkit-input-placeholder {
+    color: #6d7a8b
+}
+.topbar-search input:-moz-placeholder {
+    color: #6d7a8b
+}
+.topbar-search input:-ms-input-placeholder {
+    color: #6d7a8b
+}
+.topbar-search .icon-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+    transition-property: font-size;
+    transition-duration: .3s
+}
+.topbar-avatar {
+    display: inline-block;
+    margin-top: 2px;
+    line-height: 66px
+}
+.topbar-avatar:focus img,
+.topbar-avatar:hover img {
+    opacity:1;
+}
+.topbar-avatar img {
+    margin: 5px 10px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #333841;
+    background-color: #333841;
+    border-radius: 50px;
+    transition-duration: .15s;
+    opacity:0.8;
+}
+.toggle-sidebar {
+    display: inline-block;
+    vertical-align: middle;
+    height: 66px;
+    float: right
+}
+@media only screen and (max-width: 1010px) {
+    .topbar {
+        text-align: center;
+        color: #e1edd8
+    }
+    .pricing-col footer .topbar a,
+    .topbar .ap-payment-button,
+    .topbar .btn,
+    .topbar .pricing-col footer a {
+        border-color: #fff!important;
+        color: #fff!important
+    }
+    .topbar.is-scrolled {
+        background-color: rgba(120, 171, 78, .95)
+    }
+    .profiler-results {
+        display: none
+    }
+    .topbar-menu-icon {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 66px
+    }
+    .topbar-menu-icon:before {
+        position: absolute;
+        top: 16px;
+        left: -20px;
+        color: #fff;
+        font-size: 30px;
+        content: "\F0C9"
+    }
+    .topbar-right {
+        position: absolute;
+        float: none;
+        top: 0;
+        right: 0
+    }
+    .topbar-menu {
+        display: block;
+        position: fixed;
+        top: 66px;
+        bottom: 0;
+        left: 0;
+        width: 210px;
+        z-index: 1000;
+        background: #404852;
+        transform: translate3d(-210px, 0, 0);
+        transition: transform .3s
+    }
+    .topbar-menu.is-active,
+    .topbar-menu a {
+        transform: translateZ(0)
+    }
+    .topbar-menu a {
+        display: block;
+        float: none;
+        height: 66px;
+        border-top: 1px solid hsla(0, 0%, 100%, .05);
+        border-bottom: 1px solid #2b333c;
+        color: #6d7a8b;
+        line-height: 66px;
+        transition: color .3s, border .1s
+    }
+    .topbar-menu a:focus,
+    .topbar-menu a:hover {
+        background-color: #485361;
+        color: #fff
+    }
+    .topbar-menu .topbar-menu_home {
+        display: block
+    }
+    .home-icon {
+        display: none
+    }
+    .topbar-search.focus,
+    .topbar-search.focus input,
+    .topbar-search:hover,
+    .topbar-search:hover input {
+        color: #e1edd8
+    }
+}
+@media only screen and (max-width: 1125px) {
+    .topbar-search.focus,
+    .topbar-search:hover {
+        width: 130px;
+        background-color: transparent
+    }
+}
+@media only screen and (max-width: 450px) {
+    .topbar-search {
+        display: none
+    }
+    .signed_in .topbar-search {
+        display: block
+    }
+    .topbar-search:hover {
+        width: 34px;
+        border: 2px solid transparent;
+        background: transparent
+    }
+    .topbar-search input {
+        display: none
+    }
+}

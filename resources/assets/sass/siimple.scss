@@ -1,0 +1,31 @@
+
+
+//Import mixins
+@import "node_modules/siimple/src/mixins";
+
+//Import colors
+@import "node_modules/siimple/src/colors";
+
+//Import the base
+@import "node_modules/siimple/src/base";
+
+//Import typography: p, headings, links...
+@import "node_modules/siimple/src/typography";
+
+//Import the alerts module
+@import "node_modules/siimple/src/alert";
+
+//Import buttons
+@import "node_modules/siimple/src/btn";
+
+//Import code boxes
+@import "node_modules/siimple/src/code";
+
+//Import form module
+@import "node_modules/siimple/src/form";
+
+//Import the grid system for siimple
+@import "node_modules/siimple/src/grid";
+
+//Import the table module
+@import "node_modules/siimple/src/table";
